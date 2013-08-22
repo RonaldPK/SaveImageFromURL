@@ -22,7 +22,6 @@
 	UIImage *pic = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:url]]];
 	
 	UIImageWriteToSavedPhotosAlbum(pic, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
-	// UIImageWriteToSavedPhotosAlbum(shot, nil, nil, nil);
 	
 }
 
@@ -32,25 +31,6 @@
 	NSString* jsString = [NSString stringWithFormat:@"%@(\"%i\");", self.cbMethod, error ? 0 : 1];
 	[super writeJavascript:jsString];
 	
-	// [self.webView stringByEvaluatingJavaScriptFromString:jsString];
-	
-	
-	
-	/*
-	UIAlertView *alert;
-    
-    if (error) // Unable to save the image
-        alert = [[UIAlertView alloc] initWithTitle:@"Problem"
-                                           message:@"Please allow this app to access your photos.\n Settings > Privacy > Photos"
-                                          delegate:self cancelButtonTitle:@"Ok" 
-                                 otherButtonTitles:nil];
-    else // All is well
-        alert = [[UIAlertView alloc] initWithTitle:@"Success" 
-                                           message:@"Saved image to your photos." 
-                                          delegate:self cancelButtonTitle:@"Ok" 
-                                 otherButtonTitles:nil];
-    [alert show];
-    */
 }
 
 @end
