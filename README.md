@@ -11,7 +11,7 @@ by Ronald Klip ([github.com/RonaldPK](https://github.com/RonaldPK))
 ## Adding the Plugin to your project ##
 Through the [Command-line Interface](http://cordova.apache.org/docs/en/3.0.0/guide_cli_index.md.html#The%20Command-line%20Interface):
 ```
-cordova plugin add https://github.com/RonaldPK/SaveImage.git
+cordova plugin add https://github.com/RonaldPK/SaveImageFromURL.git
 ```
 
 ## Release Notes ##
