@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.contentecontent.cordova.plugin.saveImage"
+        version="0.0.1">
+
+    <name>SaveImage</name>
+
+    <description>Save image from URL. A very simple plugin for Cordova 3.x.x</description>
+    <keywords>save, image, ios</keywords>
+    <license>MIT License</license>
+
+    <author>Ronald Klip (github.com/RonaldPK)</author>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <!-- ios -->
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+		<feature name="SaveImage">
+			<param name="ios-package" value="SaveImageFromURL"/>
+		</feature>
+        </config-file>
+
+        <js-module src="www/saveImage.js" name="SaveImage">
+            <clobbers target="plugin.saveImage" />
+        </js-module>
+
+	<header-file src="src/ios/SaveImageFromURL.h" />
+	<source-file src="src/ios/SaveImageFromURL.m" />
+
+    </platform>
+
+</plugin>
