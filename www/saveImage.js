@@ -1,4 +1,4 @@
-cordova.define("com.contentecontent.cordova.plugin.saveImage.SaveImage", function(require, exports, module) {/**
+/**
  *  saveImage.js
  *  Cordova Save Image Plugin
  *
@@ -23,4 +23,4 @@ SaveImage.prototype = {
 
 var saveImage = new SaveImage();
 
-module.exports = saveImage;});
+module.exports = saveImage;
