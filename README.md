@@ -15,16 +15,16 @@ cordova plugin add https://github.com/RonaldPK/SaveImageFromURL.git
 ```
 
 ## Release Notes ##
-#### Version 0.0.1 (22-08-2013) ####
+#### Version 1.0.0 (22-08-2013) ####
 - Initial release.
 
 ## Using the plugin ##
-The plugin creates the object ```window.plugin.saveImage``` with one method:
+The plugin creates the object ```window.plugins.saveImage``` with one method:
 
 ### saveImageFromURL() ###
 Takes two parameters: url and a string with the name of the callback method
 ```javascript
-window.plugin.saveImage.saveImageFromURL(url, cbRef);
+window.plugins.saveImage.saveImageFromURL(url, cbRef);
 ```
 
 The plugin returns 1 on success and 0 on failure. Failure is most likely due to the app not having access to the user's Photos.
@@ -32,5 +32,5 @@ The plugin returns 1 on success and 0 on failure. Failure is most likely due to 
 ####  Example ####
 ```javascript
 var myCallbackMethod = function(returnVal) {console.log(returnVal);}
-window.plugin.saveImage.saveImageFromURL('http://www.example.com/path/to/image.png', 'myCallbackMethod');
+window.plugins.saveImage.saveImageFromURL('http://www.example.com/path/to/image.png', 'myCallbackMethod');
 ```
